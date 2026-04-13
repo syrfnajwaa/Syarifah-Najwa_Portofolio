@@ -1,89 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <title>Data Mahasiswa — Syarifah Najwa</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">Portfolio</a>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Beranda</a>
-        <a href="data.html" class="nav-link active">Data</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <section class="hero">
-    <div class="container">
-      <p class="label">Latar Belakang &amp; Akademik</p>
-      <h1>Data Mahasiswa</h1>
-      <p class="bio">Berikut adalah latar belakang dan data akademik saya.</p>
-    </div>
-  </section>
-
-    <!-- List Latar Belakang Pendidikan -->
-  <section class="section">
-    <div class="container">
-      <h2>Latar Belakang Pendidikan</h2>
-      <div class="education-list">
-        <div class="education-item">
-          <h3>SDIT Nurul Ishlah Banda Aceh</h3>
-          <p class="periode">2012-2018</p>
-        </div>
-        <div class="education-item">
-          <h3>SMP N 19 Percontohan Banda Aceh</h3>
-          <p class="periode">2018-2021</p>
-        </div>
-        <div class="education-item">
-          <h3>SMA N 3 Banda Aceh</h3>
-          <p class="periode">2021-2024</p>
-        </div>
-        <div class="education-item">
-          <h3>Universitas Syiah Kuala</h3>
-          <p class="periode">2024-Sekarang</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Mahasiswa — Syarifah Najwa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold font-display" href="index.html"
+          >Portofolio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="data.html">Data</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Tabel Mata Kuliah -->
-  <section class="section">
-    <div class="container">
-      <h2>Tabel Mata Kuliah</h2>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>No</th>
-              <th>Kode</th>
-              <th>Mata Kuliah</th>
-              <th class="center">SKS</th>
-              <th class="center">Nilai</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td class="kode">SINF1001</td><td>Pemrograman</td><td class="center">3</td><td class="center bold">A</td></tr>
-            <tr><td>2</td><td class="kode">SINF1002</td><td>Struktur Diskrit</td><td class="center">3</td><td class="center bold">AB</td></tr>
-            <tr><td>3</td><td class="kode">SINF1008</td><td>Jaringan Komputer</td><td class="center">3</td><td class="center bold">A</td></tr>
-            <tr><td>4</td><td class="kode">SINF1012</td><td>Basis Data 1</td><td class="center">3</td><td class="center bold">A</td></tr>
-            <tr><td>5</td><td class="kode">SINF2019</td><td>Basis Data 2</td><td class="center">3</td><td class="center bold">A</td></tr>
-            <tr><td>6</td><td class="kode">SINF2027</td><td>Human Computer Interaction</td><td class="center">3</td><td class="center bold">A</td></tr>
-          </tbody>
-        </table>
+    <!-- Header -->
+    <section class="hero-section pb-3">
+      <div class="container">
+        <span class="badge bg-secondary-custom text-dark mb-3"
+          >AKADEMIK & PENGALAMAN</span
+        >
+        <h1 class="font-display fw-bold display-5">Data Mahasiswa</h1>
+        <p class="text-muted" style="max-width: 540px">
+          Berikut adalah latar belakang dan data akademik saya.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2026 — Personal Portfolio.</p>
-  </footer>
+    <!-- Tabs -->
+    <section class="py-4">
+      <div class="container">
+        <ul class="nav nav-tabs custom-tabs mb-4" id="dataTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="edu-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#edu"
+              type="button"
+              role="tab"
+            >
+              <i class="bi bi-building me-1"></i>Pendidikan
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="mk-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#mk"
+              type="button"
+              role="tab"
+            >
+              <i class="bi bi-book me-1"></i>Mata Kuliah
+            </button>
+          </li>
+        </ul>
 
-</body>
+        <div class="tab-content" id="dataTabContent">
+          <!-- Tab: Pendidikan — Accordion -->
+          <div class="tab-pane fade show active" id="edu" role="tabpanel">
+            <div
+              class="alert alert-warm d-flex align-items-center gap-2 mb-4"
+              role="alert"
+            >
+              <i class="bi bi-info-circle text-accent"></i>
+              <span>Klik setiap item untuk melihat detail pendidikan.</span>
+            </div>
+
+            <div class="accordion custom-accordion" id="eduAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#edu1"
+                  >
+                    <i class="bi bi-building me-3 text-accent"></i>
+                    <div>
+                      <strong>SDIT Nurul Ishlah Banda Aceh</strong><br /><small
+                        class="text-accent"
+                        >2012 — 2018</small
+                      >
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="edu1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#eduAccordion"
+                >
+                  <div class="accordion-body text-muted ps-5">
+                    Pendidikan dasar dengan kurikulum terpadu.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#edu2"
+                  >
+                    <i class="bi bi-building me-3 text-accent"></i>
+                    <div>
+                      <strong>SMP N 19 Percontohan Banda Aceh</strong
+                      ><br /><small class="text-accent">2018 — 2021</small>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="edu2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#eduAccordion"
+                >
+                  <div class="accordion-body text-muted ps-5">
+                    Pendidikan menengah pertama.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#edu3"
+                  >
+                    <i class="bi bi-building me-3 text-accent"></i>
+                    <div>
+                      <strong>SMA N 3 Banda Aceh</strong><br /><small
+                        class="text-accent"
+                        >2021 — 2024</small
+                      >
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="edu3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#eduAccordion"
+                >
+                  <div class="accordion-body text-muted ps-5">
+                    Pendidikan menengah atas jurusan IPA TEKNIK.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#edu4"
+                  >
+                    <i class="bi bi-mortarboard me-3 text-accent"></i>
+                    <div>
+                      <strong>Universitas Syiah Kuala</strong><br /><small
+                        class="text-accent"
+                        >2024 — Sekarang</small
+                      >
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="edu4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#eduAccordion"
+                >
+                  <div class="accordion-body text-muted ps-5">
+                    S1 Informatika, Fakultas MIPA.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Mata Kuliah — Table -->
+          <div class="tab-pane fade" id="mk" role="tabpanel">
+            <div class="card border-custom">
+              <div class="card-header bg-transparent border-0 pt-4 px-4">
+                <h5 class="font-display fw-bold mb-0">
+                  <i class="bi bi-book text-accent me-2"></i>Tabel Mata Kuliah
+                </h5>
+              </div>
+              <div class="card-body px-4">
+                <div class="table-responsive rounded">
+                  <table
+                    class="table table-hover align-middle mb-0 custom-table"
+                  >
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Kode</th>
+                        <th>Mata Kuliah</th>
+                        <th class="text-center">SKS</th>
+                        <th class="text-center">Nilai</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="font-monospace text-accent">SINF1001</td>
+                        <td>Pemrograman</td>
+                        <td class="text-center">4</td>
+                        <td class="text-center">
+                          <span class="badge bg-accent">A</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="font-monospace text-accent">SINF1002</td>
+                        <td>Struktur Diskrit</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">
+                          <span class="badge bg-secondary-custom text-dark"
+                            >AB</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td class="font-monospace text-accent">SINF1008</td>
+                        <td>Jaringan Komputer</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">
+                          <span class="badge bg-accent">A</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td class="font-monospace text-accent">SINF1012</td>
+                        <td>Basis Data 1</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">
+                          <span class="badge bg-accent">A</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td class="font-monospace text-accent">SINF2019</td>
+                        <td>Basis Data 2</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">
+                          <span class="badge bg-accent">A</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td class="font-monospace text-accent">SINF2027</td>
+                        <td>Human Computer Interaction</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">
+                          <span class="badge bg-accent">A</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <p>&copy; 2026 — Personal Portfolio. Dibuat dengan ❤️</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
