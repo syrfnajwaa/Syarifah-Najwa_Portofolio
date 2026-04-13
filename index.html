@@ -1,63 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio personal mahasiswa informatika - Syarifah Najwa">
-  <title>Syarifah Najwa — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syarifah Najwa — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold font-display" href="index.html"
+          >Portofolio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">Portfolio</a>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link active">Beranda</a>
-        <a href="data.html" class="nav-link">Data</a>
+    <!-- Alert Banner -->
+    <div class="container mt-alert">
+      <div
+        class="alert alert-warm d-flex align-items-center gap-2"
+        role="alert"
+      >
+        <i class="bi bi-stars text-accent"></i>
+        <span
+          >👋 Selamat datang di portfolio saya! Silakan jelajahi halaman ini
+          untuk mengenal saya lebih dekat.</span
+        >
       </div>
     </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <p class="label">Mahasiswa Informatika</p>
-        <h1>Syarifah Najwa</h1>
-        <p class="npm">NPM: <span>2408107010064</span></p>
-        <p class="bio">
-          Seorang mahasiswa semester 4 jurusan  Informatika yang tertarik
-          dalam pengembangan web dan desain antarmuka pengguna.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-md-7">
+            <span class="badge bg-secondary-custom text-dark mb-3"
+              >MAHASISWA INFORMATIKA</span
+            >
+            <h1 class="font-display fw-bold display-4">Syarifah Najwa</h1>
+            <p class="text-muted fs-5">
+              NPM: <span class="text-dark fw-semibold">2408107010064</span>
+            </p>
+            <p class="text-muted mt-3" style="max-width: 440px">
+              Seorang mahasiswa semester 4 jurusan Informatika yang tertarik
+              dalam pengembangan web dan desain antarmuka pengguna.
+            </p>
+            <a href="data.html" class="btn btn-accent mt-3">
+              <i class="bi bi-mortarboard me-2"></i>Lihat Data Akademik
+            </a>
+          </div>
+          <div class="col-md-5 text-center">
+            <div
+              class="photo-wrapper"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Syarifah Najwa — Informatika USK"
+            >
+              <div class="photo-bg-accent"></div>
+              <img
+                src="NAJWA.png"
+                alt="Foto profil Syarifah Najwa"
+                class="profile-photo"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-photo">
-        <div class="photo-bg"></div>
-        <img src="NAJWA.png" alt="Foto profil Syarifah Najwa" class="photo">
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <i class="bi bi-calendar3 fs-4 text-accent"></i>
+                <h3 class="fw-bold font-display mt-2 mb-0">4</h3>
+                <small class="text-muted text-uppercase ls-wide"
+                  >Semester</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <i class="bi bi-book fs-4 text-accent"></i>
+                <h3 class="fw-bold font-display mt-2 mb-0">30+</h3>
+                <small class="text-muted text-uppercase ls-wide"
+                  >Mata Kuliah</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <i class="bi bi-award fs-4 text-accent"></i>
+                <h3 class="fw-bold font-display mt-2 mb-0">3.8</h3>
+                <small class="text-muted text-uppercase ls-wide">IPK</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <i class="bi bi-code-slash fs-4 text-accent"></i>
+                <h3 class="fw-bold font-display mt-2 mb-0">2</h3>
+                <small class="text-muted text-uppercase ls-wide">Proyek</small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section class="skills">
-    <div class="container">
-      <h2>Keahlian</h2>
-      <ul class="skills-list">
-        <li><span class="dot"></span>Beginner HTML &amp; CSS</li>
-        <li><span class="dot"></span>C Programming</li>
-        <li><span class="dot"></span>Database SQL</li>
-        <li><span class="dot"></span>UI/UX Design</li>
-        <li><span class="dot"></span>Git &amp; Version Control</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section class="skills-section py-5">
+      <div class="container">
+        <h2 class="font-display fw-bold mb-4">Keahlian</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="fw-semibold"
+                    ><i class="bi bi-code text-accent me-2"></i>HTML & CSS</span
+                  >
+                  <span class="badge badge-outline">Beginner</span>
+                </div>
+                <div class="progress" style="height: 8px">
+                  <div class="progress-bar bg-accent" style="width: 60%"></div>
+                </div>
+                <small class="text-muted d-block text-end mt-1">60%</small>
+              </div>
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2026 — Personal Portfolio.</p>
-  </footer>
+          <div class="col-sm-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="fw-semibold"
+                    ><i class="bi bi-terminal text-accent me-2"></i>C
+                    Programming</span
+                  >
+                  <span class="badge badge-outline">Beginner</span>
+                </div>
+                <div class="progress" style="height: 8px">
+                  <div class="progress-bar bg-accent" style="width: 80%"></div>
+                </div>
+                <small class="text-muted d-block text-end mt-1">80%</small>
+              </div>
+            </div>
+          </div>
 
-</body>
+          <div class="col-sm-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="fw-semibold"
+                    ><i class="bi bi-database text-accent me-2"></i>Database
+                    SQL</span
+                  >
+                  <span class="badge badge-outline">Beginner</span>
+                </div>
+                <div class="progress" style="height: 8px">
+                  <div class="progress-bar bg-accent" style="width: 65%"></div>
+                </div>
+                <small class="text-muted d-block text-end mt-1">65%</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="fw-semibold"
+                    ><i class="bi bi-palette text-accent me-2"></i>UI/UX
+                    Design</span
+                  >
+                  <span class="badge badge-outline">Beginner</span>
+                </div>
+                <div class="progress" style="height: 8px">
+                  <div class="progress-bar bg-accent" style="width: 55%"></div>
+                </div>
+                <small class="text-muted d-block text-end mt-1">55%</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="card skill-card">
+              <div class="card-body">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span class="fw-semibold"
+                    ><i class="bi bi-git text-accent me-2"></i>Git & Version
+                    Control</span
+                  >
+                  <span class="badge badge-outline">Beginner</span>
+                </div>
+                <div class="progress" style="height: 8px">
+                  <div class="progress-bar bg-accent" style="width: 80%"></div>
+                </div>
+                <small class="text-muted d-block text-end mt-1">80%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Carousel -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="font-display fw-bold mb-4">Proyek</h2>
+        <div
+          id="projectCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card project-card mx-auto" style="max-width: 500px">
+                <div class="card-body">
+                  <h5 class="font-display fw-bold">Sistem Basis Data</h5>
+                  <p class="text-muted small">
+                    Aplikasi manajemen data Rumah Sakit dengan SQL.
+                  </p>
+                  <span class="badge bg-secondary-custom text-dark me-1"
+                    >SQL</span
+                  >
+                  <span class="badge bg-secondary-custom text-dark"
+                    >Database</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card project-card mx-auto" style="max-width: 500px">
+                <div class="card-body">
+                  <h5 class="font-display fw-bold">UI/UX Design</h5>
+                  <p class="text-muted small">
+                    Design aplikasi untuk mengetahui cuaca di suatu tempat
+                    wisata.
+                  </p>
+                  <span class="badge bg-secondary-custom text-dark me-1"
+                    >Figma</span
+                  >
+                  <span class="badge bg-secondary-custom text-dark">UI/UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-accent rounded-circle p-2"
+            ></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-accent rounded-circle p-2"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <p>&copy; 2026 — Personal Portfolio. Dibuat dengan ❤️</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+      );
+      tooltipTriggerList.map(function (el) {
+        return new bootstrap.Tooltip(el);
+      });
+    </script>
+  </body>
 </html>
